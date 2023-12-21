@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "font-1";
   src: url(./font/Inter-VariableFont_slnt\wght.ttf);
@@ -16,6 +17,7 @@ a:visited {
   color: white;
   text-decoration: none;
   transition: 0.3s;
+  cursor: none;
 }
 a:hover {
   font-size: 1.3rem;
@@ -25,7 +27,42 @@ body {
   background: rgb(27, 27, 27);
   color: rgb(246, 246, 246);
   min-height: 100vh;
+  cursor: none;
+  z-index: 1;
 }
+/* **************** Créaction de classe pour Js *************** */
+.mousemove {
+  transition: 0.05s;
+  height: 20px;
+  width: 20px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background: rgb(0, 17, 255);
+  border-radius: 500px;
+}
+ .mousemove2 {
+  transition: 0.10s;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 500px;
+  mix-blend-mode: difference;
+}
+.mousemove3 {
+  transition: 0.15s;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: rgba(125, 126, 122, 0.678);
+  border-radius: 500px;
+  mix-blend-mode: difference;
+} 
+
+/* ************************************************************ */
+
 nav {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -35,6 +72,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+  z-index: 5;
 }
 section {
   display: flex;
